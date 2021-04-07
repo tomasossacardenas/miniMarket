@@ -1,5 +1,4 @@
 package exceptions;
-
 public class PicoCedulaException extends Exception {
 	
 	public PicoCedulaException(){
