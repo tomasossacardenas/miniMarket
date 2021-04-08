@@ -1,5 +1,6 @@
 package exceptions;
 
+@SuppressWarnings("serial")
 public class PicoCedulaException extends Exception {
 	
 	public PicoCedulaException(){

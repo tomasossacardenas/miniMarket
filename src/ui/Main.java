@@ -9,10 +9,11 @@ import model.MiniMarket;
 
 public class Main {
 	static Scanner sc = new Scanner(System.in);
+	private static MiniMarket miniMarket;
 
 	public static void main(String[] args) throws IOException {
 	    
-		MiniMarket miniMarket= new MiniMarket();
+		miniMarket= new MiniMarket();
 		int day;
 		boolean salir=false;
 		
@@ -27,7 +28,6 @@ public class Main {
 
 			System.out.println(menuMessage);
 			String eleccion=sc.nextLine();
-
 
 			if(eleccion.equals("1")) {
 				System.out.println("Cual es el tipo de documento de la persona \n"+

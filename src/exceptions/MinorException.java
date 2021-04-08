@@ -1,4 +1,6 @@
 package exceptions;
+
+@SuppressWarnings("serial")
 public class MinorException extends Exception{
 
 	public MinorException(){
