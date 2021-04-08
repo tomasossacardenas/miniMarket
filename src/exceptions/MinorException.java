@@ -1,6 +1,4 @@
 package exceptions;
-
-
 public class MinorException extends Exception{
 
 	public MinorException(){

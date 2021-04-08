@@ -20,6 +20,7 @@ public class MiniMarket {
 	public void addPerson(IdType idType, String id, int day) throws MinorException, PicoCedulaException{
 		
 		if(idType==IdType.TI) {
+			quantityOfPeople++;
 			throw new MinorException();
 		}
 		else {
@@ -39,8 +40,8 @@ public class MiniMarket {
 					peopleWhoEntered.add(new Person(idType, id));
 				}
 			}
+		quantityOfPeople++;
 		}
-		quantityOfPeople++;// Asi tenga TI o alguna otra
 	}
 	
 	public int returnPenultimateNumber(String cadena) {
