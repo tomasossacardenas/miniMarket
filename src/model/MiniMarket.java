@@ -26,21 +26,24 @@ public class MiniMarket {
 		else {
 			if(returnPenultimateNumber(id)%2==0) {//si el penultimo digito es par
 				if(day%2==0) {
+					quantityOfPeople++;
 					throw new PicoCedulaException();
 				}
 				else {// si el penultimo digito es par y el dia es impar
+					quantityOfPeople++;
 					peopleWhoEntered.add(new Person(idType, id));
 				}
 			}
 			else {//si el penultimo digito es impar
 				if(day%2!=0) {
+					quantityOfPeople++;
 					throw new PicoCedulaException();
 				}
 				else {// si el penultimo digito es impar y el dia es par
+					quantityOfPeople++;
 					peopleWhoEntered.add(new Person(idType, id));
 				}
 			}
-		quantityOfPeople++;
 		}
 	}
 	
