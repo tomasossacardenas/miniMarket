@@ -45,9 +45,7 @@ public class MiniMarketTest {
 		try {
 			miniMarket.addPerson(idType, id, day);
 		} catch (MinorException e) {
-			e.printStackTrace();
 		} catch (PicoCedulaException e) {
-			e.printStackTrace();
 		}
 		
 		assertEquals(miniMarket.getPeopleWhoEntered().size(), 0);
